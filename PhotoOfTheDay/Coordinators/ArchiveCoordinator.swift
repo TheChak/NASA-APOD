@@ -27,10 +27,10 @@ extension ArchiveCoordinator: ArchiveViewControllerDelegate {
         guard let navigationController = navigationController else{
             fatalError("Error on Navigation Controller on Archive tab.")
         }
-        let photoOfTheDayCoordinator = PhotoOfTodayCoordinator(navigationController: navigationController,
+        let apodCoordinator = APODCoordinator(navigationController: navigationController,
                                                                serviceFactory: serviceFactory,
                                                                serviceCache: serviceCache,
                                                                date: date)
-        photoOfTheDayCoordinator.showMediaOfTheDay()
+        apodCoordinator.showMediaOfTheDay()
     }
 }

@@ -28,10 +28,10 @@ extension FavoritesCoordinator: FavoritesViewControllerDelegate {
         guard let navigationController = navigationController else{
             fatalError("Error on Navigation Controller on Favorites tab.")
         }
-        let photoOfTheDayCoordinator = PhotoOfTodayCoordinator(navigationController: navigationController,
-                                                               serviceFactory: dataFacade.serviceFactory,
-                                                               serviceCache: serviceCache,
-                                                               date: date)
-        photoOfTheDayCoordinator.showMediaOfTheDay(isFavorite: true)
+        let apodCoordinator = APODCoordinator(navigationController: navigationController,
+                                                       serviceFactory: dataFacade.serviceFactory,
+                                                       serviceCache: serviceCache,
+                                                       date: date)
+        apodCoordinator.showMediaOfTheDay(isFavorite: true)
     }
 }

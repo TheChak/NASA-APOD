@@ -1,5 +1,5 @@
 //
-//  PhotoOfTheDayViewControllerFactory.swift
+//  APODViewControllerFactory.swift
 //  PhotoOfTheDay
 //
 //  Created by Shubhajit Chakraborty on 03/11/2021.
@@ -7,8 +7,8 @@
 
 import UIKit
 
-class PhotoOfTheDayViewControllerFactory {
-    class func photoOfTheDayViewController(dataFacade: PhotoDataFacade,
+class APODViewControllerFactory {
+    class func apodViewController(dataFacade: PhotoDataFacade,
                                            date: String,
                                            isFavorite: Bool,
                                            delegate: APODViewControllerDelegate) -> APODViewController {

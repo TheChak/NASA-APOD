@@ -16,7 +16,7 @@ enum TabIndex: Int {
 class AppCoordinator {
     
     private weak var window: UIWindow?
-    var photoOfTodayCoordinator: PhotoOfTodayCoordinator?
+    var apodCoordinator: APODCoordinator?
     var archiveCoordinator: ArchiveCoordinator?
     var favoritesCoordinator: FavoritesCoordinator?
     let serviceFactory: ServiceFactoryProtocol
@@ -37,11 +37,11 @@ class AppCoordinator {
         
         let photoOfTodayNavigationController = tabBarViewControllers[TabIndex.media.rawValue]
         let today = DateHelper.formatter.string(from: Date())
-        photoOfTodayCoordinator = PhotoOfTodayCoordinator(navigationController: photoOfTodayNavigationController,
+        apodCoordinator = APODCoordinator(navigationController: photoOfTodayNavigationController,
                                                           serviceFactory: serviceFactory,
                                                           serviceCache: serviceCache,
                                                           date: today)
-        photoOfTodayCoordinator?.appCoordinator = self
+        apodCoordinator?.appCoordinator = self
         window.rootViewController = tabBarController
         
         let archiveNavigationController = tabBarViewControllers[TabIndex.archive.rawValue]
