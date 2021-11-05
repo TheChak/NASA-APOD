@@ -11,8 +11,8 @@ class PhotoOfTheDayViewControllerFactory {
     class func photoOfTheDayViewController(dataFacade: PhotoDataFacade,
                                            date: String,
                                            isFavorite: Bool,
-                                           delegate: PhotoViewControllerDelegate) -> PhotoViewController {
-        let viewController = UIStoryboard.photoOfToday.appInstantiateViewController(type: PhotoViewController.self)
+                                           delegate: APODViewControllerDelegate) -> APODViewController {
+        let viewController = UIStoryboard.photoOfToday.appInstantiateViewController(type: APODViewController.self)
         viewController.dataFacade = dataFacade
         viewController.date = date
         viewController.isFavorite = isFavorite

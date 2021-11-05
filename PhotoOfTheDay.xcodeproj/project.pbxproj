@@ -19,7 +19,7 @@
 		6B108C19273079A300F6ACD2 /* Favorites.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B108C18273079A300F6ACD2 /* Favorites.storyboard */; };
 		6B108C2127307B5100F6ACD2 /* PhotoOfToday.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B108C2027307B5100F6ACD2 /* PhotoOfToday.storyboard */; };
 		6B108C262730A20500F6ACD2 /* PhotoOfTodayCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B108C252730A20500F6ACD2 /* PhotoOfTodayCoordinator.swift */; };
-		6B108C2B2730A7E900F6ACD2 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B108C2A2730A7E900F6ACD2 /* PhotoViewController.swift */; };
+		6B108C2B2730A7E900F6ACD2 /* APODViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B108C2A2730A7E900F6ACD2 /* APODViewController.swift */; };
 		6B108C302730AF5500F6ACD2 /* ServiceFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B108C2F2730AF5500F6ACD2 /* ServiceFactoryProtocol.swift */; };
 		6B108C382730B06E00F6ACD2 /* NetworkServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B108C372730B06E00F6ACD2 /* NetworkServiceFactory.swift */; };
 		6B108C3D2730B2D900F6ACD2 /* ServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B108C3C2730B2D900F6ACD2 /* ServiceProtocol.swift */; };
@@ -80,7 +80,7 @@
 		6B108C18273079A300F6ACD2 /* Favorites.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Favorites.storyboard; sourceTree = "<group>"; };
 		6B108C2027307B5100F6ACD2 /* PhotoOfToday.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PhotoOfToday.storyboard; sourceTree = "<group>"; };
 		6B108C252730A20500F6ACD2 /* PhotoOfTodayCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoOfTodayCoordinator.swift; sourceTree = "<group>"; };
-		6B108C2A2730A7E900F6ACD2 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		6B108C2A2730A7E900F6ACD2 /* APODViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODViewController.swift; sourceTree = "<group>"; };
 		6B108C2F2730AF5500F6ACD2 /* ServiceFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFactoryProtocol.swift; sourceTree = "<group>"; };
 		6B108C372730B06E00F6ACD2 /* NetworkServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceFactory.swift; sourceTree = "<group>"; };
 		6B108C3C2730B2D900F6ACD2 /* ServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProtocol.swift; sourceTree = "<group>"; };
@@ -255,7 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				6BC98CA227354F2A00BEF4D6 /* Factories */,
-				6B108C2A2730A7E900F6ACD2 /* PhotoViewController.swift */,
+				6B108C2A2730A7E900F6ACD2 /* APODViewController.swift */,
 				6B108C732733166100F6ACD2 /* MediaViewController.swift */,
 				6B88F8432733459F00A8C7EF /* ArchiveViewController.swift */,
 				6BC98C8C2734C6D800BEF4D6 /* FavoritesViewController.swift */,
@@ -446,7 +446,7 @@
 				6B108C3D2730B2D900F6ACD2 /* ServiceProtocol.swift in Sources */,
 				6BC98CA9273550C900BEF4D6 /* DateHelper.swift in Sources */,
 				6B108BDD27306F5500F6ACD2 /* SceneDelegate.swift in Sources */,
-				6B108C2B2730A7E900F6ACD2 /* PhotoViewController.swift in Sources */,
+				6B108C2B2730A7E900F6ACD2 /* APODViewController.swift in Sources */,
 				6BC98C922734C99200BEF4D6 /* FavoritesCoordinator.swift in Sources */,
 				6B4E542F2734BDD900391877 /* Favorites+CoreDataClass.swift in Sources */,
 			);

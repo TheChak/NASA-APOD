@@ -7,6 +7,12 @@
 
 import UIKit
 
+enum TabIndex: Int {
+    case media = 0
+    case archive
+    case favorites
+}
+
 class AppCoordinator {
     
     private weak var window: UIWindow?
@@ -21,7 +27,7 @@ class AppCoordinator {
         #if USE_CANNED_DATA
         self.serviceFactory = CannedDataServiceFactory()
         #else
-        let serviceCache = ServiceCache(numberOfCachedItems: 3)
+        let serviceCache = ServiceCache(numberOfCachedItems: 5)
         self.serviceFactory = NetworkServiceFactory(apiKey: "DEMO_KEY")
         #endif
         
@@ -29,7 +35,7 @@ class AppCoordinator {
             fatalError("Issue with Tab Bar setup.")
         }
         
-        let photoOfTodayNavigationController = tabBarViewControllers[0]
+        let photoOfTodayNavigationController = tabBarViewControllers[TabIndex.media.rawValue]
         let today = DateHelper.formatter.string(from: Date())
         photoOfTodayCoordinator = PhotoOfTodayCoordinator(navigationController: photoOfTodayNavigationController,
                                                           serviceFactory: serviceFactory,
@@ -38,12 +44,12 @@ class AppCoordinator {
         photoOfTodayCoordinator?.appCoordinator = self
         window.rootViewController = tabBarController
         
-        let archiveNavigationController = tabBarViewControllers[1]
+        let archiveNavigationController = tabBarViewControllers[TabIndex.archive.rawValue]
         archiveCoordinator = ArchiveCoordinator(navigationController: archiveNavigationController,
                                                 serviceFactory: serviceFactory,
                                                 serviceCache: serviceCache)
         
-        let favoritesNavigationController = tabBarViewControllers[2]
+        let favoritesNavigationController = tabBarViewControllers[TabIndex.favorites.rawValue]
         favoritesCoordinator = FavoritesCoordinator(navigationController: favoritesNavigationController,
                                                     serviceFactory: serviceFactory,
                                                     serviceCache: serviceCache)

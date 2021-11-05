@@ -18,10 +18,10 @@ class PhotoOfTodayCoordinator {
         self.navigationController = navigationController
         self.dataFacade = PhotoDataFacade(serviceFactory: serviceFactory, serviceCache: serviceCache)
         self.date = date
-        let photoViewController = navigationController.viewControllers.first as? PhotoViewController
-        photoViewController?.dataFacade = dataFacade
-        photoViewController?.date = date
-        photoViewController?.delegate = self
+        let apodViewController = navigationController.viewControllers.first as? APODViewController
+        apodViewController?.dataFacade = dataFacade
+        apodViewController?.date = date
+        apodViewController?.delegate = self
     }
     
     func showMediaOfTheDay(isFavorite: Bool = false) {
@@ -33,8 +33,8 @@ class PhotoOfTodayCoordinator {
     }
 }
 
-extension PhotoOfTodayCoordinator: PhotoViewControllerDelegate {
-    func photoViewController(_ photoViewController: PhotoViewController, didFavoritePhoto ofDate: Date?) {
+extension PhotoOfTodayCoordinator: APODViewControllerDelegate {
+    func apodViewController(_ APODViewController: APODViewController, didFavoritePhoto ofDate: Date?) {
         
     }
 }

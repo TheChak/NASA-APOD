@@ -1,5 +1,5 @@
 //
-//  PhotoViewController.swift
+//  APODViewController.swift
 //  PhotoOfTheDay
 //
 //  Created by Shubhajit Chakraborty on 01/11/2021.
@@ -7,11 +7,11 @@
 
 import UIKit
 
-protocol PhotoViewControllerDelegate: class {
-    func photoViewController(_ photoViewController: PhotoViewController, didFavoritePhoto ofDate: Date?)
+protocol APODViewControllerDelegate: class {
+    func apodViewController(_ apodViewController: APODViewController, didFavoritePhoto ofDate: Date?)
 }
 
-class PhotoViewController: UIViewController {
+class APODViewController: UIViewController {
     
     @IBOutlet var scrollView: UIScrollView!
     @IBOutlet var containerView: UIView!
@@ -19,7 +19,7 @@ class PhotoViewController: UIViewController {
     @IBOutlet var descriptionTableView: UITableView!
     
     var dataFacade: PhotoDataFacade?
-    weak var delegate: PhotoViewControllerDelegate?
+    weak var delegate: APODViewControllerDelegate?
     var date: String?
     var isFavorite = false
     
@@ -169,7 +169,7 @@ class PhotoViewController: UIViewController {
     }
 }
 
-extension PhotoViewController: UITableViewDataSource {
+extension APODViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 2

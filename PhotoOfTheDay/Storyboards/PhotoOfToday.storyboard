@@ -26,10 +26,10 @@
             </objects>
             <point key="canvasLocation" x="-1433" y="355"/>
         </scene>
-        <!--Photo View Controller-->
+        <!--View Controller-->
         <scene sceneID="JIR-cg-s10">
             <objects>
-                <viewController storyboardIdentifier="PhotoViewController" id="ePE-hE-dCy" customClass="PhotoViewController" customModule="PhotoOfTheDay" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="APODViewController" id="ePE-hE-dCy" customClass="APODViewController" customModule="PhotoOfTheDay" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cpg-6T-i0L">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

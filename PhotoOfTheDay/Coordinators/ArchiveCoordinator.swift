@@ -23,7 +23,7 @@ class ArchiveCoordinator {
 }
 
 extension ArchiveCoordinator: ArchiveViewControllerDelegate {
-    func archiveViewController(_ photoViewController: ArchiveViewController, didTapOnDate date: String) {
+    func archiveViewController(_ archiveViewController: ArchiveViewController, didTapOnDate date: String) {
         guard let navigationController = navigationController else{
             fatalError("Error on Navigation Controller on Archive tab.")
         }

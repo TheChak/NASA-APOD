@@ -8,7 +8,7 @@
 import UIKit
 
 protocol ArchiveViewControllerDelegate: class {
-    func archiveViewController(_ photoViewController: ArchiveViewController, didTapOnDate date: String)
+    func archiveViewController(_ archiveViewController: ArchiveViewController, didTapOnDate date: String)
 }
 
 class ArchiveViewController: UITableViewController {
