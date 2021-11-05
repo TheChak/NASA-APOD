@@ -25,6 +25,7 @@ class AppCoordinator {
         self.window = window
         let tabBarController = UIStoryboard.main.appInstantiateInitialViewController(UITabBarController.self)
         #if USE_CANNED_DATA
+        /// This file does not exist right now. This is to demonstrate how easily canned responses can be added to unit/automation testing or a demo mode of the app.
         self.serviceFactory = CannedDataServiceFactory()
         #else
         let serviceCache = ServiceCache(numberOfCachedItems: 5)
